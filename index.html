@@ -3,16 +3,13 @@
   <head>
     <title>Sas Educação</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicionado para responsividade -->
     <style>
       body {
         font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
         margin: 0;
         padding: 0;
-        overflow-x: hidden; /* Evita rolagem horizontal */
       }
-
-      /* Imagem de fundo (esquerda) */
       .img3 {
         position: fixed;
         left: 0;
@@ -21,135 +18,118 @@
         padding: 0;
         transform: scale(0.3);
         transform-origin: top left;
-        z-index: -1; /* Envia para o fundo */
-        max-width: 100%; /* Limita largura */
       }
 
-      /* Imagem lateral (direita) */
       .img2 {
-        width: 225px;
+        width: 150px;
         position: fixed;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 10px;
         margin: 0;
-        max-width: 100%; /* Limita a largura em dispositivos pequenos */
       }
 
       .div1 {
-        position: relative; /* Evita sobreposição */
+        position: absolute;
         display: inline-block;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: 90%;
-        max-width: 400px;
+        width: 90%; /* Ajuste para caber em telas menores */
       }
-
       .btn-1 {
         background-color: #0467db;
         font-size: 1rem;
         color: white;
         border-radius: 10px;
         border: none;
+        font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
         font-weight: 600;
-        padding: 3px 0;
-        height: 44px;
-        width: 100%;
+        padding: 10px;
+        height: auto;
+        width: 100%; /* Ajuste para responsividade */
         margin-bottom: 20px;
+        transition: 0.2s ease-in-out;
       }
-
+      .btn-1:hover {
+        background-color: #085cc4;
+        transition: 0.2s;
+      }
+      .text {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+      }
       .valid {
+        background-color: aquamarine;
         text-decoration: none;
+        font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
         font-weight: 600;
+        border: none;
         color: #666e75;
-        background-color: transparent;
-        border-width: 0;
+        background-color: #ffffff00;
         line-height: 1.6;
         font-size: 1rem;
-        display: block;
+        padding: 0 10px;
+        display: inline-block;
         margin-top: 10px;
       }
-
       .valid:hover {
         text-decoration: underline;
       }
-
       .title {
         font-size: 1.5rem;
         font-weight: 500;
-        margin: 20px 0 10px;
+        line-height: 1.25;
+        margin: 0;
+        text-align: center;
       }
-
       .paragrafo {
         font-size: 1rem;
         color: #666e75;
-        margin-bottom: 20px;
+        text-align: center;
       }
 
-      .img1 {
-        width: 80%;
-        max-width: 300px;
-        height: auto;
-      }
-
-      /* Estilos para dispositivos móveis */
-      @media (max-width: 768px) {
+      /* Media Queries para telas pequenas */
+      @media (max-width: 600px) {
         .img3 {
-          transform: scale(0.2); /* Escala menor para telas médias */
+          transform: scale(0.2);
         }
         .img2 {
-          width: 150px;
+          width: 120px;
+          top: 0px;
+          right: 0px;
         }
         .btn-1 {
           font-size: 0.9rem;
+          padding: 8px;
         }
         .title {
-          font-size: 1.3rem;
+          font-size: 1.25rem;
         }
         .paragrafo {
           font-size: 0.9rem;
         }
-      }
-
-      /* Estilos para telas muito pequenas (ex.: smartphones antigos) */
-      @media (max-width: 480px) {
-        .img3 {
-          display: none; /* Oculta imagem de fundo para economizar espaço */
-        }
-        .img2 {
-          display: none; /* Oculta imagem lateral */
-        }
-        .btn-1 {
-          font-size: 0.8rem;
-        }
-        .title {
-          font-size: 1.2rem;
-        }
-        .paragrafo {
-          font-size: 0.8rem;
+        .valid {
+          font-size: 0.9rem;
         }
       }
     </style>
   </head>
   <body>
-    <div>
-      <img class="img3" src="https://cdn.arcotech.io/sas/images/sas_plataforma_de_educacao.svg" alt="Logo da plataforma de educação SAS">
-    </div>
+    <div><img class="img3" src="https://cdn.arcotech.io/sas/images/sas_plataforma_de_educacao.svg"></div>
     <div class="div1">
-      <img class="img1" src="image.png" alt="Imagem central">
+      <img class="img1" src="https://portalsaseducacao.com.br/assets/onboarding.ee5b2886.png" alt="Bem-vindo">
       <h1 class="title">Olá, que bom ter você aqui</h1>
       <p class="paragrafo">Escolha uma opção para começar:</p>
-      <form action="https://seu-dominio.com/entrar">
+      <form action="https://hentaiputa.com">
         <div class="inter-div1">
           <input type="submit" class="btn-1" value="Entrar"><br>
-          <a class="valid" href="https://seu-dominio.com/validar-chave">validar chave de acesso</a>
+          <a class="valid" href="https://encr.pw/saseducacaovalidarchavedeacesso">Validar chave de acesso</a>
         </div>
       </form>
     </div>
-    <div>
-      <img class="img2" src="image2.png" alt="Imagem lateral">
-    </div>
+    <div class="div2"><img class="img2" src="image2.png" alt="Ilustração"></div>
     <script src="scr.js"></script>
   </body>
 </html>
